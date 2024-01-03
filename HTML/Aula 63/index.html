@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form oninput="res.value = parseInt(a.value)+parseInt(b.value)">
+        0<input type="range" id="a" value="50">100
+        <p>+</p>
+        <input type="number" value="0" id="b">
+        <p>=</p>
+        <output name="res" for="a b"></output>
+
+    </form>
+</body>
+</html>

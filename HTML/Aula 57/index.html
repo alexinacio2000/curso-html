@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        meter{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <meter id="m1" value="0" min="0" max="100" high="80" low="2" optimum="50"></meter>
+    <button onclick="progresso()">Clique aqui</button>
+    <button onclick="reset()">Resetar</button>
+
+    <script>
+        
+        function progresso(){
+            var prog = document.getElementById("m1");
+            prog.value +=10;
+        }
+
+        function reset(){
+            var res = document.getElementById("m1");
+            res.value = 0;
+        }
+        
+    </script>
+</body>
+</html>

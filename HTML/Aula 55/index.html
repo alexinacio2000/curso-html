@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            width: 700px;
+            height: 500px;
+            border: none;
+        }
+        #Eng{
+            width: 1080px;
+            height: 720px;
+            border: none;
+        }
+    </style>
+        
+
+        
+    <script>
+        function trocaBanner(){
+            var Num =Math.floor(Math.random()*3);
+            var imgs = ['a1.jpg', 'a2.jpg', 'a3.jpg']
+            document.getElementById("Eng").src=imgs[Num];
+        }
+        function iniciar(){
+            trocaBanner();
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+
+</head>
+<body>
+    <iframe src="" name="Eng" id="Eng"></iframe>
+    <a href=""></a>
+</html>

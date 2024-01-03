@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22</title>
+    <script>
+        function abrirDialog (){
+            document.getElementById("d1").setAttribute("open", "");
+        }
+        function fecharDialog (){
+            document.getElementById("d1").removeAttribute("open")
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <article>
+            <button onclick="abrirDialog()" >Abrir</button>
+            <button onclick="fecharDialog()">Fechar</button>
+            <dialog id="d1" open>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos provident, porro enim quo aperiam modi, repudiandae, architecto 
+                    quam vitae accusamus! Itaque magnam minus debitis <dfn title="Volume">voluptatibus </dfn>exercitationem quos nam ratione!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <dfn> <abbr title="Presente">Praesentium</abbr></dfn> quos provident, porro enim quo aperiam modi, repudiandae, architecto 
+                    quam vitae accusamus! Itaque magnam minus debitis <dfn title="Volume">voluptatibus </dfn>exercitationem quos nam ratione!</p>
+            </dialog>
+        </article>
+    </section>
+</body>
+</html>
